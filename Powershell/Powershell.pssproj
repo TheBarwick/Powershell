@@ -35,11 +35,22 @@
     <Folder Include="Office 365\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exchange\Add-SMTPAddress.ps1" />
+    <Compile Include="Exchange\Clear-TargetAddress-Attribute.ps1" />
+    <Compile Include="Active Directory\Get-ADInformation_1 4 3.ps1" />
+    <Compile Include="Office 365\Get-AllMailboxPermissions-O365.ps1" />
+    <Compile Include="Exchange\Get-DistributionGroupMembers_O365.ps1" />
+    <Compile Include="Exchange\Get-MailboxStatistics-Exchange-Online.ps1" />
+    <Compile Include="Exchange\Get-NDR.ps1" />
+    <Compile Include="Active Directory\Get-UserOU_And_CustomAttribute.ps1" />
+    <Compile Include="Office 365\MasterDiscovery.ps1" />
     <Compile Include="Office 365\Add-365UserLicense.ps1" />
     <Compile Include="Office 365\Add-BulkDomain365.ps1" />
     <Compile Include="Azure\Connect-AzureRM.ps1" />
     <Compile Include="Exchange\Connect-EO.ps1" />
     <Compile Include="Office 365\Connect-MSOL.ps1" />
+    <Compile Include="Office 365\Office365Discovery.ps1" />
+    <Compile Include="Exchange\Set-DistributionGroup-targetAddress-Attribute.ps1" />
     <Compile Include="Skype Online\Connect-SfBO.ps1" />
     <Compile Include="Azure\Connect-SPO.ps1" />
     <Compile Include="Office 365\Connect365.ps1" />
@@ -66,10 +77,10 @@
     <Compile Include="Powershell.tests.ps1" />
     <Compile Include="Office 365\Remove-SMTPAddress.ps1" />
     <Compile Include="Script.ps1" />
-    <Compile Include="Set-Console.ps1" />
     <Compile Include="Active Directory\Set-Inheritance.ps1" />
     <Compile Include="Exchange\Trim_mailNickname_and_Remove_Single_proxyAddress.ps1" />
     <Compile Include="Exchange\UpdateVirtualDirectory.ps1" />
+    <Compile Include="Exchange\Sync-MailPublicFolders.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />

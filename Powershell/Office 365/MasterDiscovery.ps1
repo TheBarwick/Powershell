@@ -18,7 +18,7 @@ Date Created: 4/20/2016
 
 ***Change Log***
 5/5/16
-	- Removed the "AD Account Expires" human redable output. Now the script only shows an expiration date if the account expires. 
+	- Removed the "AD Account Expires" human readable output. Now the script only shows an expiration date if the account expires. 
 
 #>
 
