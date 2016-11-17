@@ -1,0 +1,1 @@
+﻿Get-TransportServer "MADPMAILCH04.rayovac.com" | Get-MessageTrackingLog -eventID FAIL -start (Get-Date).AddDays(-5) -ResultSize Unlimited | Where {$_.Recipients -match "IMCEAEX-_O=RAYOVAC_OU=EXCHANGE"} | Select-Object Sender,Recipients -ExpandProperty Recipients
