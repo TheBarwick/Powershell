@@ -26,9 +26,50 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="Active Directory\" />
+    <Folder Include="Exchange\" />
+    <Folder Include="Mobility\" />
+    <Folder Include="Azure\" />
+    <Folder Include="Skype Online\" />
+    <Folder Include="Office 365\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Office 365\Add-365UserLicense.ps1" />
+    <Compile Include="Office 365\Add-BulkDomain365.ps1" />
+    <Compile Include="Azure\Connect-AzureRM.ps1" />
+    <Compile Include="Exchange\Connect-EO.ps1" />
+    <Compile Include="Office 365\Connect-MSOL.ps1" />
+    <Compile Include="Skype Online\Connect-SfBO.ps1" />
+    <Compile Include="Azure\Connect-SPO.ps1" />
+    <Compile Include="Office 365\Connect365.ps1" />
+    <Compile Include="Exchange\ConnectLocalExchange.ps1" />
+    <Compile Include="Office 365\Disable-O365Mailbox.ps1" />
+    <Compile Include="Office 365\Finish-365MailboxMove.ps1" />
+    <Compile Include="Office 365\Finish-All365MailboxMoves.ps1" />
+    <Compile Include="Office 365\Get-365EmailAddresses.ps1" />
+    <Compile Include="Office 365\Get-365MailboxDelegates.ps1" />
+    <Compile Include="Office 365\Get-365MailboxStats.ps1" />
+    <Compile Include="Office 365\Get-MigrationStatusReport.ps1" />
+    <Compile Include="Office 365\Get-MoveStats.ps1" />
+    <Compile Include="Office 365\Get-MSOLTenantGUID.ps1" />
+    <Compile Include="Skype Online\Get_All_CsOnlineUser_and_GrantCsConferencingPolicy.ps1" />
+    <Compile Include="Office 365\LicenseReport.ps1" />
+    <Compile Include="Office 365\List-SMTPAddresses.ps1" />
+    <Compile Include="Office 365\MigrationLicenses.ps1" />
+    <Compile Include="Skype Online\Move-CSUser.ps1" />
+    <Compile Include="Office 365\Move-MailboxTo365.ps1" />
+    <Compile Include="Office 365\Move-MultipleMailboxTo365.ps1" />
+    <Compile Include="Office 365\New-365Mailbox.ps1" />
+    <Compile Include="Powershell.psd1" />
+    <Compile Include="Powershell.psm1" />
+    <Compile Include="Powershell.tests.ps1" />
+    <Compile Include="Office 365\Remove-SMTPAddress.ps1" />
     <Compile Include="Script.ps1" />
+    <Compile Include="Set-Console.ps1" />
+    <Compile Include="Active Directory\Set-Inheritance.ps1" />
+    <Compile Include="Exchange\Trim_mailNickname_and_Remove_Single_proxyAddress.ps1" />
+    <Compile Include="Exchange\UpdateVirtualDirectory.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
